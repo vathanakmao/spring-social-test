@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-=======
+
 Spring Social Test
 ==================
-
->>>>>>> Facebook login using the signed_request param (no spring social
 
 This is just a simple Facebook application for showing the currently logged-in user's details in the Facebook Canvas page.
 

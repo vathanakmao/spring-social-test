@@ -1,10 +1,6 @@
-target
-*.iml
 .classpath
 .project
-<<<<<<< HEAD
 .idea
-=======
-.idea/
->>>>>>> Facebook login using the signed_request param (no spring social
 .settings
+target
+*.iml
