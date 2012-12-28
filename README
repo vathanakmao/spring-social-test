@@ -1,0 +1,28 @@
+
+This is just a simple Facebook application for showing the currently logged-in user's details in the Facebook Canvas page.
+
++ To access the app on Facebook, type https://apps.facebook.com/mytestapp-truefalse/ and you will see the currently logged-in user's details such as username, email, etc.
++ App settings URL:
+
++ Workflow
+    Users needs to authorize the app first before they can access the application.
+    FBAuthorizationInterceptor redirects a user to the Login Dialog (grant-permissions page) if he/she hasn't authorized the app yet.
+    If the user accepts the Login Dialog, he/she is redirected back to the URL they tried to open with the signed_request parameter.
+    The signed_request parameter is a decoded string contained user_id, access_token, etc. The access token is used to make API calls to Facebook for example, post a message to the user's wall.
+    The parameters are mapped to FbSignedRequest object and stored in session. If the object exists in session, we don't need to redirect the user the Login Dialog.
+    There is an API to clear session "/admin/session/clear".
+
++ Facebook App
+    The app is created by they user vathanakmao.atwork@gmail.com
+    After logging into Facebook, you can see the app settings from this https://developers.facebook.com/apps/304455099666589/summary
+
++ GAE
+    . appId: testfacebookapp-truefalse.appspot.com
+    . email: vathanakmao.atwork@gmail.com
+
++ Deployment
+    mvn clean gae:deploy
+
++ References:
+    https://developers.facebook.com/docs/howtos/login/signed-request/
+    https://developers.facebook.com/docs/reference/login/signed-request/
