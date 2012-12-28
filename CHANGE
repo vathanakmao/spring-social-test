@@ -3,6 +3,6 @@
 
 Version 1
 --------------------------------------------------------------------------------------------------------------------------
-Facebook Login using the signed_request parameter (no spring social)
+Facebook Login using the signed_request parameter (using General login method, not apps or server-side logins) [not using spring social]
 Add required libs for GAE webapp (no persistence)
 Add required libs for Spring MVC
